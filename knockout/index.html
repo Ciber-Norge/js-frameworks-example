@@ -1,0 +1,14 @@
+<html>
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js'></script>
+<script type='text/javascript' src='script.js'></script>
+<body>
+<input type="text" data-bind="textInput: firstName">
+<input type="text" data-bind="textInput: lastName">
+
+<div data-bind="text: fullName"></div>
+
+<script>
+ko.applyBindings(new AppViewModel());
+</script>
+</body>
+</html>
