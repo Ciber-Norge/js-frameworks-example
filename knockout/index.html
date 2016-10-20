@@ -3,8 +3,10 @@
 <script type='text/javascript' src='script.js'></script>
 
 <body>
-	<label>First name: </label><input type="text" data-bind="textInput: firstName ">
-	<label>Last name: </label><input type="text" data-bind="textInput: lastName ">
+
+	<!--TODO: flytt ut htmlen til en egen html side og inkluder i index.html-->
+	First name: <input type="text" data-bind="textInput: firstName"><br>
+	Last name: <input type="text" data-bind="textInput: lastName"><br>
 	<div data-bind="text: fullName"></div>
 
 	<script>

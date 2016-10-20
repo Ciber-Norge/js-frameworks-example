@@ -1,0 +1,49 @@
+Aurelia is a JavaScript front-end framework. 
+It's similar to frameworks like Angular, Ember and React.
+
+Before we get everything installed we'll assume you have Node and npm installed.
+If not I would highly recommend nvm.
+It's a version manager for Node.
+Check for the instructions on the website on how to install it.
+
+We also need jspm. This tool is another package management system.
+
+$ mkdir HelloWorld
+$ cd HelloWorld
+$ npm install jspm -g
+$ npm install http-server -g
+
+$ jspm init
+At this point you'll be prompted if you want certain config files to be created. Just hit enter through everything.
+
+Next make sure you have jspm installed locally.
+
+$ npm install jspm --save-dev
+
+Now we can install two framework packages for Aurelia.
+First we'll install the aurelia framework then the aurelia bootstrapper.
+
+$ jspm install aurelia-framework aurelia-bootstrapper
+
+aurelia-app in the <body> tag
+
+point to system.js && config.js via script
+
+System.import('aurelia-bootstrapper');
+
+Now that we have our src files, let's go back to the main folder and edit the config.js file.
+We'll need to specify the src folder in our path as well as add some more babelOptions.
+
+From 
+  babelOptions: {
+    "optional": [
+      "runtime",
+      "optimisation.modules.system"
+    ]
+  },
+  paths: {
+    "github:*": "jspm_packages/github/*",
+    "npm:*": "jspm_packages/npm/*"
+  },
+
+  To 

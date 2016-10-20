@@ -2,14 +2,17 @@
 
 <body>
 	<!-- place the custom tag anywhere inside the body -->
-	<sample></sample>
+	<name></name>
 	<!-- include the tag -->
-	<script type="riot/tag" src="sample.tag"></script>
+	<script src="name/name.tag.js"></script>
+	<script type="riot/tag" src="name/name.tag"></script>
 	<!-- include riot.js -->
 	<script src="https://cdn.jsdelivr.net/riot/2.6/riot+compiler.min.js"></script>
 	<!-- mount the tag -->
-	<script>riot.mount('sample')</script>
-
+	<script>riot.mount('name', {
+		firstName: 'Kalle',
+		lastName: 'Klovn'
+		})</script>
 </body>
 
 </html>

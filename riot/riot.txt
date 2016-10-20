@@ -1,0 +1,1 @@
+Can not run riot localy, have to host a webserver to make it work.
