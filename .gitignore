@@ -1,2 +1,6 @@
 node_modules/
 jspm_packages/
+typings/
+
+angular2/app/*.js
+angular2/app/*.js.map
