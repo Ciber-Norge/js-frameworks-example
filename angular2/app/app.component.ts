@@ -11,5 +11,4 @@ export class AppComponent {
     get fullName() {
         return this.firstName + ' ' + this.lastName;
     }
-
 }
