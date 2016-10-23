@@ -4,14 +4,17 @@
     <template>
         First Name: <input type="text" value="{{firstName::input}}"><br>
         Last Name: <input type="text" value="{{lastName::input}}"><br>
-        Full Name: <span>{{firstName}}</span> <span>{{lastName}}</span>
+        Full Name: <span>{{fullName(firstName, lastName)}}</span>
     </template>
     <script>
         Polymer({
             is: 'my-app',
+            fullName: function(firstName, lastName) {
+                return firstName + ' ' + lastName;
+            },
             ready: function() {
                 this.firstName = 'Kalle';
-                this.lastName = 'Klovn';
+                this.lastName = 'Klovn';            
             }
         })
     </script>
