@@ -1,0 +1,18 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+
+<dom-module id="my-app">
+    <template>
+        First Name: <input type="text" value="{{firstName::input}}"><br>
+        Last Name: <input type="text" value="{{lastName::input}}"><br>
+        Full Name: <span>{{firstName}}</span> <span>{{lastName}}</span>
+    </template>
+    <script>
+        Polymer({
+            is: 'my-app',
+            ready: function() {
+                this.firstName = 'Kalle';
+                this.lastName = 'Klovn';
+            }
+        })
+    </script>
+</dom-module>
