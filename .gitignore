@@ -2,7 +2,13 @@ node_modules/
 jspm_packages/
 bower_components/
 typings/
-ember/ember-quickstart/
+
 
 angular2/app/*.js
 angular2/app/*.js.map
+
+# --------------------
+# typings
+# --------------------
+ember/ember-quickstart/
+tmp/
